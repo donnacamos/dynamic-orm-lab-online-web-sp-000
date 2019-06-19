@@ -31,6 +31,6 @@ class InteractiveRecord
   
   def col_names_for_insert
     self.class.column_names.delete_if {|column_name| 
-    values_array << "''"
+    values_array << "'#{send.column_name}'"
     
 end
