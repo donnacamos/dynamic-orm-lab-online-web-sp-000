@@ -47,4 +47,6 @@ class InteractiveRecord
     sql = "SELECT * FROM #{self.table_name} WHERE name = ?"
     row = DB[:conn].execute(sql,name)
   end
+  
+  
 end
