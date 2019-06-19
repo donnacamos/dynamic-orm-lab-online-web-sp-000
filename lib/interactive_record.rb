@@ -33,6 +33,6 @@ class InteractiveRecord
     self.class.column_names.delete_if {|column_name| 
     values_array << "'#{send.column_name}'" unless send(column_name).nil? 
   end 
-  
+  values_array.join()
     
 end
