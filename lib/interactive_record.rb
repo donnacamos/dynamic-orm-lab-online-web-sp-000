@@ -49,9 +49,6 @@ class InteractiveRecord
   end
   
    def self.find_by(attribute)
-    #executes the SQL to find a row by the attribute passed into the method
-    #WHERE name = ? OR grade = ? OR id = ?
-    #attribute is a hash, so it has a key/value pair
     attribute_key = attribute.keys.join()
     attrubute_value = attribute.values.first
     sql =<<-SQL
